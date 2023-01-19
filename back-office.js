@@ -13,8 +13,6 @@ const id = params.get("id");
 console.log(params);
 
 window.onload = async () => {
-  //   if (res.ok) {
-
   if (id !== null) {
     let res = await fetch(url + id, options);
     let { name, brand, imageUrl, price, description } = await res.json();
